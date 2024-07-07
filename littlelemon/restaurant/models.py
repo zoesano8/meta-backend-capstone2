@@ -1,6 +1,7 @@
 from django.db import models
 
 # Create your models here.
+#table booking
 class Booking(models.Model):
     first_name = models.CharField(max_length=200)
     reservation_date = models.DateField()
@@ -9,6 +10,7 @@ class Booking(models.Model):
     def __str__(self):
         return self.first_name
 
+#menu
 class Menu(models.Model):
    name = models.CharField(max_length=200)
    price = models.IntegerField(null=False)
